@@ -7,10 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             const target = document.querySelector(link.getAttribute("href"));
             window.scrollTo({
-                top: target.offsetTop,
+                top: target.offsetTop - 60,
                 behavior: "smooth"
             });
         });
     });
 });
-
